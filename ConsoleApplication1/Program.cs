@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,13 +23,22 @@ namespace ConsoleApplication1
 
             //print(0);
 
-            MyStaticClass.myStaticVariable = 100;
+            //MyStaticClass.myStaticVariable = 100;
 
-            MyStaticClass.MyStaticProperty = 200;
+            //MyStaticClass.MyStaticProperty = 200;
 
-            MyStaticClass.myStaticVariable = 300;
+            //MyStaticClass.myStaticVariable = 300;
 
-            MyStaticClass.MyStaticProperty = 400;
+            //MyStaticClass.MyStaticProperty = 400;
+            ArrayList arryList2 = new ArrayList();
+            arryList2.Add(10);
+            arryList2.Add(50);
+            arryList2.Add(30);
+
+            arryList2.Sort();
+
+            foreach (var item in arryList2)
+                Console.WriteLine(item);
             
             Console.ReadKey();
         }
